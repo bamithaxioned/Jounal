@@ -625,10 +625,10 @@ nav {
 .category-block-list {
   width: 31.7%;
   height: 240px;
-  position: relative;
   border-radius: 10px;
-  overflow: hidden;
+  position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .category-block-list figure,
@@ -641,17 +641,54 @@ nav {
   position: absolute;
   right: 6%;
   bottom: 5%;
-  text-transform: uppercase;
   color: #F3F0EE;
   font-weight: 600;
   font-size: 21px;
   letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 .category-block-list { display: none;}
 .category-block-list.active { display: block;}
 /* category styling ends here */
 
+/* article styling starts here */
+
+.article {
+  padding: 65px 0 53px;
+  background-color: #F6F6F6;
+}
+
+.article-block { display: flex; }
+.article-block-list { width: 29%; }
+.article-block-list:nth-child(2) { margin: 0 60px; }
+
+.heading-four {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #7c7c7c45;
+  position: relative;
+  color: #282828;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.article-block-content { margin: 14px 0 26px; }
+
+.post {
+  color: #3F3F3F;
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.date {
+  display: block;
+  color: #a79eb1;
+  font-size: 13px;
+  font-style: italic;
+}
+/* article styling ends here */
 
 /*=================================
   main styling ends here
