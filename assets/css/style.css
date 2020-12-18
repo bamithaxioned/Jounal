@@ -127,47 +127,71 @@ header {
   z-index: 5;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #443D80 20%, #256482);
-  opacity: .98;
+  background: -webkit-gradient(linear, left top, right top, color-stop(31%, #443D80), to(#256482));
+  background: -o-linear-gradient(left, #443D80 31%, #256482);
+  background: linear-gradient(to right, #443D80 31%, #256482);
+  opacity: 0.8;
 }
 
 header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .navigation-left {
   width: 71%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .navigation-right {
   width: 77%;
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .navigation-left-link,
 .navigation-right-link {
+  color: #C7C2EC;
   font-size: 14px;
   text-transform: uppercase;
-  color: #C7C2EC;
 }
 
 .main-heading-link {
   color: #fff;
-  font-size: 28px;
   font-family: 'Poppins', sans-serif;
+  font-size: 28px;
   font-weight: 800;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   text-transform: uppercase;
 }
@@ -185,13 +209,13 @@ nav {
   height: 3px;
   margin: 7px 0px;
   display: block;
-  background-color: var(--primary-color);
+  background-color: #fff;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s
 }
 
-.active-hamburger .line { background-color: var(--primary-color); }
+.active-hamburger .line { background-color: #fff; }
 
 .active-hamburger .line1 {
   -webkit-transform:  translateY(12px) rotate(41deg);
