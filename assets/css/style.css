@@ -432,6 +432,115 @@ nav {
 }
 /* banner styling ends here */
 
+/* latest post styling starts here */
+
+
+.news { padding: 50px 0;}
+
+.news .wrapper { text-align: center;}
+
+.heading-three {
+  padding: 8px 40px;
+  border: 1px solid #D0D0D0;
+  position: relative;
+  display: inline-block;
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.news-block {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-block-list {
+  width: 23.2%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news-content {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.news-content figure {
+  height: 209px;
+}
+
+.news-content img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content-box {
+  padding: 20px 10px 0;
+  border: 1px solid #D0D0D0;
+  border-top: none;
+  position: relative;
+}
+
+.shaped-box {
+  display: block;
+  /* position: absolute; */
+}
+
+
+.shaped-box {
+  padding: 6px 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #3c8cd2;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+.shaped-box::before,
+.shaped-box::after  {
+  content: "";
+  border: 16px solid transparent;
+  position: absolute;
+  top: 0;
+}
+
+.shaped-box::before{
+  border-right-color: #3c8cd2;
+  left: -31px;
+}
+
+.shaped-box::after {
+  border-left-color: #3c8cd2;
+  right: -31px;
+}
+
+.news-content-heading {
+  width: 80%;
+  margin: 23px 0 11px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 24px;
+  text-transform: lowercase;
+}
+
+.news-content-para {
+  margin-bottom: 24px;
+  font-size: 13px;
+  word-break: break-all;
+  line-height: 25px;
+  color: #7C7C7C;
+}
+/* latest post styling ends here */
+
+
 /*=================================
   main styling ends here
 =================================*/
