@@ -435,15 +435,18 @@ nav {
 /* latest post styling starts here */
 
 
-.news { padding: 50px 0;}
+.news { 
+  padding: 80px 0 19px;
+  background-color: #F6F6F6;
+}
 
 .news .wrapper { text-align: center;}
 
 .heading-three {
   padding: 8px 40px;
   border: 1px solid #D0D0D0;
-  position: relative;
   display: inline-block;
+  position: relative;
   color: #222;
   font-size: 18px;
   font-weight: 600;
@@ -451,7 +454,7 @@ nav {
 }
 
 .news-block {
-  margin: 30px 0;
+  margin: 50px 0px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -464,12 +467,18 @@ nav {
 
 .news-content {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .news-content figure {
-  height: 209px;
+  height: 212px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
 }
+
+.news-block-list:nth-child(2) .news-content:first-child figure:first-child { height: 183px;}
+.news-block-list:nth-child(4) .news-content:first-child figure:first-child { height: 183px;}
 
 .news-content img {
   height: 100%;
@@ -482,12 +491,6 @@ nav {
   border-top: none;
   position: relative;
 }
-
-.shaped-box {
-  display: block;
-  /* position: absolute; */
-}
-
 
 .shaped-box {
   padding: 6px 30px;
@@ -532,12 +535,60 @@ nav {
 }
 
 .news-content-para {
-  margin-bottom: 24px;
-  font-size: 13px;
-  word-break: break-all;
-  line-height: 25px;
+  margin-bottom: 34px;
   color: #7C7C7C;
+  font-size: 13px;
+  line-height: 28px;
+  word-break: break-all;
 }
+
+.comment-box {
+  border: 1px solid #D0D0D0;
+  border-top: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+
+.like,
+.comment {
+  border-right: 1px solid #D0D0D0;
+}
+
+.like,
+.comment,
+.more {
+  padding: 9px 0px;
+  display: flex;
+  color: #C8C8C8;
+  align-items: center;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+  text-indent: -999999px;
+}
+
+.like::after ,
+.comment::after ,
+.more::after {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 20px;
+  float: right;
+  clear: both;
+  text-indent: 0;
+  transition: .4s;
+}
+
+.like:hover::after ,
+.comment:hover::after ,
+.more:hover::after {
+  color: #3c8cd2;
+}
+
+.like::after { content: "\f164";}
+.comment::after { content: "\f075";}
+.more::after { content: "\f178";}
 /* latest post styling ends here */
 
 
