@@ -279,10 +279,10 @@ nav {
 .right-arrow-div {
   width: 80px;
   height: 70px;
+  border-radius: 50%;
   position: absolute;
   top: 45%;
   background-color: #fff;
-  border-radius: 50%;
 }
 
 .left-arrow-div {
@@ -302,18 +302,18 @@ nav {
 
 .left-arrow::after ,
 .right-arrow::after {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 0;
   color: #256482;
   font-family: FontAwesome;
-  position: absolute;
-  clear: both;
-  float: right;
-  text-indent: 0;
-  top: 0;
-  height: 100%;
-  display: flex;
   font-size: 34px;
   align-items: center;
+  clear: both;
+  float: right;
   opacity: 0.6;
+  text-indent: 0;
 }
 
 .left-arrow::after {
@@ -335,10 +335,10 @@ nav {
 }
 
 .banner-slider-list {
-  display: flex;
   width: 701px;
   height: 262px;
   border-radius: 10px;
+  display: flex;
 }
 
 .banner-slider-list figure {
@@ -355,32 +355,32 @@ nav {
 
 .banner-slider-content {
   padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: relative;
   background: #fff;
   text-align: center;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .banner-content-name {
+  padding: 6px 50px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 6px 50px;
   background-color: #3c8cd2;
   color: #fff;
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
+  transform: translate(-50%, -50%);
 }
 
 .heading-two {
   margin: 22px 0 15px;
-  font-size: 19px;
-  text-transform: lowercase;
-  font-weight: 500;
   color: #080808;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: lowercase;
 }
 
 .banner-content-name::before,
@@ -392,28 +392,28 @@ nav {
 }
 
 .banner-content-name::before{
-  left: -31px;
   border-right-color: #3c8cd2;
+  left: -31px;
 }
 
 .banner-content-name::after {
-  right: -31px;
   border-left-color: #3c8cd2;
+  right: -31px;
 }
 
 .banner-content-para {
-  font-size: 13px;
   color: #7B7B7B;
+  font-size: 13px;
   line-height: 29px;
 }
 
 .read-btn {
   padding: 9px 13px;
-  margin-top: 26px;
   border: 1px solid #3c8cd2;
+  margin-top: 26px;
   color: #3c8cd2;
-  text-transform: uppercase;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .read-btn::after {
@@ -426,9 +426,9 @@ nav {
 
 .banner-slider-list { display: none; }
 .banner-slider-list.active{
-  display: flex;
   margin-top: 53px;
   margin-left: 20px;
+  display: flex;
 }
 /* banner styling ends here */
 
