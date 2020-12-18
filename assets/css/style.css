@@ -311,17 +311,19 @@ nav {
   top: 0;
   height: 100%;
   display: flex;
-  font-size: 36px;
+  font-size: 34px;
   align-items: center;
+  opacity: 0.6;
 }
 
 .left-arrow::after {
   content: "\f104";
-  margin-left: 50px;
+  margin-left: 46px;
 }
+
 .right-arrow::after {
   content: "\f105";
-  margin-left: 13px;
+  margin-left: 20px;
 }
 
 .banner-slider {
@@ -340,7 +342,7 @@ nav {
 }
 
 .banner-slider-list figure {
-  width: 100%;
+  width: 105%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   overflow: hidden;
@@ -365,21 +367,20 @@ nav {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 8px 50px;
+  padding: 6px 50px;
   background-color: #3c8cd2;
   color: #fff;
   font-size: 13px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .heading-two {
-  margin: 26px 0 17px;
-  font-size: 20px;
-  letter-spacing: .5px;
+  margin: 22px 0 15px;
+  font-size: 19px;
   text-transform: lowercase;
-  font-weight: 600;
+  font-weight: 500;
+  color: #080808;
 }
 
 .banner-content-name::before,
@@ -401,22 +402,22 @@ nav {
 }
 
 .banner-content-para {
-  font-size: 14px;
+  font-size: 13px;
   color: #7B7B7B;
   line-height: 29px;
 }
 
 .read-btn {
-  padding: 10px 16px;
+  padding: 9px 13px;
   margin-top: 26px;
   border: 1px solid #3c8cd2;
   color: #3c8cd2;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .read-btn::after {
-  content: "\f061";
+  content: "\f178";
   margin-left: 4px;
   color: #3c8cd2;
   font-family: FontAwesome;
