@@ -114,6 +114,9 @@ li {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
+
+/* Common Classes */
+.upper-case { text-transform: uppercase; }
 /*=================================
   Header styling starts here
 =================================*/
@@ -121,6 +124,7 @@ header {
   width: 100%;
   padding: 20px 0;
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   background: linear-gradient(to right, #443D80 20%, #256482);
@@ -218,6 +222,188 @@ nav {
 /*=================================
   main styling starts here
 =================================*/
+
+/* banner styling starts here */
+.banner {
+  width: 100%;
+  height: 566px;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: url("../images/1.jpg") no-repeat center/cover;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #443D80 20%, #256482);
+  opacity: .7;
+}
+
+.banner .wrapper{ height: 100%;}
+
+.left-arrow-div,
+.right-arrow-div {
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  top: 45%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.left-arrow-div {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.right-arrow-div { 
+  right: 0;
+  transform: translateX(50%);
+}
+
+.left-arrow,
+.right-arrow {
+  text-indent: -999999px;
+}
+
+.left-arrow::after ,
+.right-arrow::after {
+  color: #256482;
+  font-family: FontAwesome;
+  position: absolute;
+  clear: both;
+  float: right;
+  text-indent: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  font-size: 36px;
+  align-items: center;
+}
+
+.left-arrow::after {
+  content: "\f104";
+  margin-left: 50px;
+}
+.right-arrow::after {
+  content: "\f105";
+  margin-left: 13px;
+}
+
+.banner-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-slider-list {
+  display: flex;
+  width: 701px;
+  height: 262px;
+  border-radius: 10px;
+}
+
+.banner-slider-list figure {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-slider-list img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-slider-content {
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.banner-content-name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 50px;
+  background-color: #3c8cd2;
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.heading-two {
+  margin: 26px 0 17px;
+  font-size: 20px;
+  letter-spacing: .5px;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.banner-content-name::before,
+.banner-content-name::after  {
+  content: "";
+  border: 16px solid transparent;
+  position: absolute;
+  top: 0;
+}
+
+.banner-content-name::before{
+  left: -31px;
+  border-right-color: #3c8cd2;
+}
+
+.banner-content-name::after {
+  right: -31px;
+  border-left-color: #3c8cd2;
+}
+
+.banner-content-para {
+  font-size: 14px;
+  color: #7B7B7B;
+  line-height: 29px;
+}
+
+.read-btn {
+  padding: 10px 16px;
+  margin-top: 26px;
+  border: 1px solid #3c8cd2;
+  color: #3c8cd2;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.read-btn::after {
+  content: "\f061";
+  margin-left: 4px;
+  color: #3c8cd2;
+  font-family: FontAwesome;
+  font-size: 14px;
+}
+
+.banner-slider-list { display: none; }
+.banner-slider-list.active{
+  display: flex;
+  margin-top: 53px;
+  margin-left: 20px;
+}
+/* banner styling ends here */
 
 /*=================================
   main styling ends here
