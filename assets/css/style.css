@@ -30,7 +30,10 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+ }
 
 /* Align radios and text inputs with their label */
 
@@ -99,8 +102,8 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1160px;
+  width: 90%; 
   margin: 0 auto;
 }
 
@@ -109,6 +112,7 @@ li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 /*=================================
   Header styling starts here
