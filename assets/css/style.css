@@ -133,6 +133,7 @@ header {
   -webkit-box-shadow: 0 0 10px #000;
   box-shadow: 0 0 10px #000;
   opacity: .8;
+  transition: .5s;
 }
 
 header.active {
