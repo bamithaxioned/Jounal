@@ -1094,12 +1094,11 @@ address {
 }
 
 /*media query for 864px starts here*/
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 900px) {
 
-.navigation-left-list { margin-right: 17px; }
-  .navigation-right-list { margin-left: 10px; }
+  .navigation-left-list { margin-right: 13px; }
+  .navigation-right-list { margin-left: 8px; }
   
-
   .navigation-left-link,
   .navigation-right-link {
     font-size: 11px;
