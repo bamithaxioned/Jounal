@@ -1039,6 +1039,12 @@ address {
     font-weight: 600;
   }
 
+  .like,
+  .comment,
+  .more {
+    pointer-events: none;
+  }
+
   .navigation-left,
   .navigation-right {
     width: 100%;
