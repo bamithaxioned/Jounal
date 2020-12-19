@@ -755,8 +755,238 @@ nav {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  padding: 45px 0 20px;
+  position: relative;
+  z-index: 1;
+  background: url("../images/12.jpg") no-repeat center/cover;
+  font-family: 'Poppins', sans-serif;
+}
 
+footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #403F7B, #205878);
+  opacity: .95;
+}
 
+.footer-top { padding: 20px 0; }
+
+.footer-top-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-top-list { width: 29%; }
+.footer-top-list:nth-child(1){ width: 31.8%; }
+
+.footer-top.para {
+  color: #A4ACDC;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.address,
+.contact-us,
+.email-us {
+  width: 54%;
+  display: flex;
+}
+
+.email-us { margin: 11px 0 15px; }
+
+.location,
+.phone,
+.email {
+  margin: 1px 9px 0 0;
+  display: inline-block;
+  text-indent: -999999px;
+}
+
+.location::after,
+.phone::after,
+.email::after {
+  content: "";
+  color: #A4ACDC;
+  font-family: FontAwesome;
+  font-size: 14px;
+  float: right;
+  clear: both;
+  text-indent: 0;
+}
+
+.location::after { content: "\f124";}
+.phone::after { content: "\f095";}
+.email::after { content: "\f003";}
+
+address,
+.contact-us a,
+.email-us a{
+  color: #A4ACDC;
+  font-size: 13.5px;
+}
+
+address {
+  margin-bottom: 25px;
+  line-height: 22px;
+}
+
+.social-icons {
+  margin-right: 14px;
+  text-indent: -999999px;
+}
+
+.social-icons::after {
+  content: "";
+  color: #9BB0CD;
+  font-family: FontAwesome;
+  font-size: 16px;
+  float: right;
+  clear: both;
+  text-indent: 0;
+}
+
+.facebook::after { content: "\f09a";}
+.google-plus::after { content: "\f0d5";}
+.linked-in::after { content: "\f0e1";}
+.pinterest::after { content: "\f0d2";}
+.twitter::after { content: "\f099";}
+.email::after { content: "\f0e0";}
+.article-block-content:nth-child(4) { display: none; }
+
+.recent-posts .article-block-content { margin: 13px 0; }
+
+.recent-posts .post{
+  display: inline-block;
+  color: #D1DAE7;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+  word-break: keep-all;
+}
+.recent-posts .date{
+  margin-top: 7px;
+  color: #ffffff75;
+  font-size: 13.5px;
+}
+
+.footer-top-list .main-heading {
+  margin-bottom: 9px;
+}
+
+.footer-top-list .heading-four {
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-color: rgba(231, 249, 252, .42);
+  color: rgb(231, 249, 252);
+  font-size: 16px;
+  font-family: Poppins;
+  letter-spacing: .5px;
+}
+
+.instagram-posts {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instagram-post-list {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.instagram-post-list figure, 
+.instagram-post-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.back-to-top {
+  position: relative;
+  text-align: center;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+  content: "";
+  width: 48%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  background-color: #AACAE7;
+  transform: translateX(-50%);
+}
+
+.back-to-top::before { left: 24%; }
+.back-to-top::after { right: -24%;}
+
+.back-top-top-btn {
+  width: 54px;
+  height: 53px;
+  padding-bottom: 4px;
+  border: 1px solid #AACAE7;
+  background-color: transparent;
+  text-indent: -999999px;
+}
+
+.back-top-top-btn::after {
+  content: "\f106";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #AACAE7;
+  font-family: FontAwesome;
+  font-size: 40px;
+  align-items: center;
+  float: right;
+  clear: both;
+  justify-content: center;
+  text-indent: 0;
+}
+
+.footer-bottom { padding: 6px 0; }
+
+.footer-bottom .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-six,
+.heading-six-link {
+  color: #ffffff4f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heading-six-link {
+  font-size: 11.3px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.policy-link {
+  color: #ffffff94;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.policy {
+  padding-right: 17px;
+  border-right: 1px solid #fff;
+}
+.terms {  padding-left: 7px;}
  /*=================================
   footer styling ends here
 =================================*/ 
