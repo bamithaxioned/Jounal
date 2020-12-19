@@ -135,6 +135,11 @@ header {
   opacity: .8;
 }
 
+header.active {
+  padding: 10px 0;
+  opacity: 1;
+}
+
 header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
